@@ -4,7 +4,7 @@ let previousGuess = null;
 
 const guessInput = document.getElementById('guessInput');
 const guessButton = document.getElementById('guessButton');
-const response = document.getElementById('response');
+const response = document.getElementById('respond');
 
 guessButton.addEventListener('click', () => {
   const guessedNumber = parseInt(guessInput.value);
