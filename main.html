@@ -1,32 +1,15 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<!-- p tag -->
-    <p id = "user">Enter a Guessed Number </p>
-    <input id= "guess"></input><br><br>
-	<!-- button -->
-	<button id="btn"></button>
-	
-    <p id = "main">"I am learning to generate random number"</p>  
-    <script type="text/javascript" src="./script.js"> 
-		let btn = getElementById("btn");
-		let output = getElementById("user");
-		let number = [Math.Floor()(Math.random() *20)];
+  <h1>Hot or Cold Game</h1>
+  <input type="number" id="guessInput" placeholder="Enter your guess">
+  <button id="guessButton">Guess</button>
+  <p id="response"></p>
 
-		btn.addEventListener('click',function){
-			let input = document.getElementById("guess").value;
-			if(input==user)
-			{
-				output.innerHTML = "Hot";
-			}
-			else
-			{
-				output.innerHTML = "Cold";
-			}
-			
-		});
-</script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
